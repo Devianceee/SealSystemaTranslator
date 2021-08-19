@@ -134,7 +134,4 @@ with open('ggs.txt', 'r') as file:
                 ggsLetter = ""
 
 print(overallMessage)
-
-
-
-        
+input("Press enter to exit...")
