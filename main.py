@@ -3,116 +3,15 @@
 def ggsToWord(inputString):
     inputString = inputString.strip()
 
-    if (inputString == "gg gg"):
-        return " "
+    systemaDict = {"gg gg": " ", "gg Gg": ".", "gg GG": ",", "gg ggs": "?", "gg Ggs": "!", "gg GGs": ";",
+                    "Gg gg": "A", "Gg Gg": "B", "Gg GG": "C", "Gg ggs": "D", "Gg Ggs": "E", "Gg GGs": "F", 
+                    "GG gg": "G", "GG Gg": "H", "GG GG": "I", "GG ggs": "K", "GG Ggs": "L", "GG GGs": "M",
+                    "ggs gg": "N", "ggs Gg": "O", "ggs GG": "P", "ggs ggs": "Q", "ggs Ggs": "R", "ggs GGs": "S",
+                    "Ggs gg": "T", "Ggs Gg": "U", "Ggs GG": "V", "Ggs ggs": "W", "Ggs Ggs": "Y", "Ggs GGS": "Z", 
+                    "GGs gg": ":clown:", "GGs Gg": ":mech:", "GGs GG": ":hisui:", "GGs ggs": ":akiha1:", "GGs Ggs": ":akiha2:", "GGs GGs": ":same:"}
 
-    elif (inputString == "gg Gg"):
-        return "."
+    return systemaDict[inputString]
             
-    elif (inputString == "gg GG"):
-        return ","
-            
-    elif (inputString == "gg ggs"):
-        return "?"
-            
-    elif (inputString == "gg Ggs"):
-        return "!"
-            
-    elif (inputString == "gg GGs"):
-        return ";"
-            
-    elif (inputString == "Gg gg"):
-        return "A"
-            
-    elif (inputString == "Gg Gg"):
-        return "B"
-            
-    elif (inputString == "Gg GG"):
-        return "C"
-            
-    elif (inputString == "Gg ggs"):
-        return "D"
-            
-    elif (inputString == "Gg Ggs"):
-        return "E"
-            
-    elif (inputString == "Gg GGs"):
-        return "F"
-            
-    elif (inputString == "GG gg"):
-        return "G"
-            
-    elif (inputString == "GG Gg"):
-        return "H"
-            
-    elif (inputString == "GG GG"):
-        return "I"
-            
-    elif (inputString == "GG ggs"):
-        return "K"
-            
-    elif (inputString == "GG Ggs"):
-        return "L"
-            
-    elif (inputString == "GG GGs"):
-        return "M"
-            
-    elif (inputString == "ggs gg"):
-        return "N"
-
-    elif (inputString == "ggs Gg"):
-        return "O"
-            
-    elif (inputString == "ggs GG"):
-        return "P"
-            
-    elif (inputString == "ggs ggs"):
-        return "Q"
-            
-    elif (inputString == "ggs Ggs"):
-        return "R"
-            
-    elif (inputString == "ggs GGs"):
-        return "S"
-            
-    elif (inputString == "Ggs gg"):
-        return "T"
-            
-    elif (inputString == "Ggs Gg"):
-        return "U"
-            
-    elif (inputString == "Ggs GG"):
-        return "V"
-            
-    elif (inputString == "Ggs ggs"):
-        return "W"
-            
-    elif (inputString == "Ggs Ggs"):
-        return "Y"
-
-    elif (inputString == "Ggs GGS"):
-        return "Z"
-        
-    elif (inputString == "GGs gg"):
-        return ":clown:"
-        
-    elif (inputString == "GGs Gg"):
-        return ":mech:"
-        
-    elif (inputString == "GGs GG"):
-        return ":hisui:"
-        
-    elif (inputString == "GGs ggs"):
-        return ":akiha1:"
-            
-    elif (inputString == "GGs Ggs"):
-        return ":akiha2:"
-            
-    elif (inputString == "GGs GGs"):
-        #print(":same:")
-        return ":same:"
-
-
 print ("Seal Systema Translator by Deviance\n")
 
 print ("Opening text file...")
